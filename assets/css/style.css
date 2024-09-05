@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(48, 2, 126);
+}
+
+.top-header {
+    background-color: rgb(23, 6, 53);
+    height: 10vh;
+    top: 0;
+    z-index: 3;
+    display: flex;
+    color: white;
+    position: sticky;
+}
+
+#website-brand-wrapper {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+}
+
+img#website-top-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.round-pic {
+    border-radius: 100%;
+}
+
+.profile-pic {
+    height: 50vh;
+    border-style: solid;
+    border-color: rgb(163, 138, 196);
+}
+
+.card {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    gap: 10px;
+    padding: 10%;
+    margin: 5%;
+    background-color: rgb(24, 6, 56);
+    flex-direction: column;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+main * {
+    color: white;
+}
+
+.cards-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+
+.small-card {
+    width: 30%;
+    aspect-ratio: 1 / 1.5;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    transition: filter 0.3s ease;
+    transition: color 1s ease;
+    overflow: hidden;
+    gap: 10%;
+    justify-content: space-around;
+    padding: 2%;
+    margin-top: 50px;
+}
+
+.html-card {
+    background-color: rgb(175, 116, 5);
+}
+
+.css-card {
+    background-color: rgb(2, 2, 179);
+
+}
+
+.js-card {
+    background-color: rgb(170, 170, 62);
+}
+
+.small-card:hover {
+    filter: brightness(1.5);
+    color: brown;
+}
+
+img.five-star-skill-img:hover {
+    src: url('/assets/img/five-star.png');
+}
+
+.card-img {
+    width: 80%;
+}
+
+#move-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    display: flex;
+}
+
+#move-top-img {
+    width: 100%;
+    opacity: 0.5;
+    transition: opacity 0.5s ease-in;
+}
+
+#move-top-img:hover {
+    opacity: 1;
+}
